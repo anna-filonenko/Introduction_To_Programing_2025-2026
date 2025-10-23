@@ -179,3 +179,9 @@ Factorial: 120
 18. Да се напише програма, която приема цяло положително число **n** и отпечатва следния килим:
 ![enter image description here](https://i.ibb.co/c2w8Gwt/kilim.png)
 
+19. Да се напише програма, която приема цяло положително число n и отпечатва числата от 1 до n*n в спираловиден вид.
+
+**Пример:**
+
+![enter image description here](https://i.ibb.co/KF7TcH6/Capture6.png)
+
