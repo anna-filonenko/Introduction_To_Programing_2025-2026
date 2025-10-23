@@ -1,3 +1,147 @@
+### **1.** Какво ще отпечата на екрана следният код?
+```c++
+#include <iostream>
+int main()
+{
+    while(true)
+    {
+        int i = 10;
+        while (i = 6 || i = 10)
+        {
+            if (i == 0)
+                break;
+            if (i == 10)
+                continue;      
+            std::cout << i-- << std::endl;
+            std::cout << --i << std::endl;
+        }
+
+        break;
+    }
+}
+```
+### Таблица с приоритет на операторите: https://pvs-studio.com/en/blog/terms/0064/
+### **1.2.** Какво ще отпечата на екрана следният код?
+```c++
+#include <iostream>
+int main()
+{
+    while(true)
+    {
+        int i = 10;
+        while ((i = 6) || (i = 10))
+        {
+            if (i == 0)
+                break;
+            if (i == 10)
+                continue;      
+            std::cout << i-- << std::endl;
+            std::cout << --i << std::endl;
+        }
+
+        break;
+    }
+}
+```
+### **1.3.** Какво ще отпечата на екрана следният код?
+```c++
+#include <iostream>
+int main()
+{
+    while(true)
+    {
+        int i = 10;
+        while ((i == 6) || (i == 10))
+        {
+            if (i == 0)
+                break;
+            if (i == 10)
+                continue;      
+            std::cout << i-- << std::endl;
+            std::cout << --i << std::endl;
+        }
+
+        break;
+    }
+}
+```
+### **1.4.** Какво ще отпечата на екрана следният код?
+```c++
+#include <iostream>
+int main()
+{
+	while (true)
+	{
+		unsigned short i = 10; //2B <=> 16b : [0,2^16)
+		while ((i == 6) || (i != 6))
+		{
+			if (i == 11)
+				break;
+			if (i == 10)
+				i++;
+			std::cout << i-- << std::endl;
+			std::cout << --i << std::endl;
+		}
+
+		break;
+	}
+}
+```
+### **2.** Какво ще отпечата на екрана следният код?
+```c++
+#include <iostream>
+int main()
+{
+	for (unsigned i = 10; i >= 0; i--)
+	{
+		std::cout << i;
+	}
+}
+```
+### **3.** Каквa е разликата между двата фрагмента код? (while / do-while)
+```c++
+#include <iostream>
+int main()
+{
+    int a = 0;
+    while (a)
+    {
+        std::cout << 'a';
+        std::cout << " abc";
+    }
+}
+```
+```c++
+#include <iostream>
+int main()
+{
+    int a = 0;
+    do
+    {
+        std::cout << 'a';
+        std::cout << " abc";
+    } while(a);
+}
+```
+### **4.** Какво ще се случи след изпълнение на кода?
+
+```c++
+for(int i=0; i<10 ; ) {
+	i = i++;
+	std::cout<<"Hello World";
+}
+```
+
+### **5.** Какво ще се случи след изпълнение на кода?
+
+```c++
+do {
+	int y = 1;
+	std::cout << y++ << " ";
+} while (y <= 10);
+
+```
+
 ## Задачи
 
 1. Да се напише програма, която приема естествено число n и изписва стълба от 1 до n
