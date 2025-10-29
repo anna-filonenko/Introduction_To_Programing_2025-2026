@@ -27,12 +27,4 @@ int main() {
 		result(n);
 
 }
-
-
-void reverseNumber(int num)() {
-	int reverse;
-	while (num / 10 > 0) {
-		int digit = 0;
-		digit = num % 10
-	}
 }
